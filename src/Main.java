@@ -60,7 +60,7 @@ public class Main {
         System.out.println(function.apply(99.1D));
         System.out.println("-----------------");
 
-        Function<Double, Long> function1 = Math::round;
+        Function<Double, Long> function1 = aDouble -> Math.round(aDouble);
         System.out.println(function1.apply(99.1D));
         System.out.println(function1.apply(1.999D));
         System.out.println("------------------");
